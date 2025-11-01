@@ -15,21 +15,26 @@ class DisplayData extends Component {
     return (
       <div>
         <h1>A short Naration of Lorem Ipsum</h1>
-        <h4>Below Contains a title and body</h4>
-        {data && (
-          <ul>
-            <li>
-              <p>
-                <b>Title :</b>
-                {data.title}
-              </p>
-              <p>
-                <b>Body :</b>
-                {data.body}
-              </p>
-            </li>
-          </ul>
-        )}
+        <h4>
+          Below Contains A title and Body gotten froma random API, Please take
+          your time to Review
+        </h4>
+        <ul>
+          <li>
+            {data && (
+              <>
+                <p>
+                  <b>Title :</b>
+                  {data.title}
+                </p>
+                <p>
+                  <b>Body :</b>
+                  {data.body}
+                </p>
+              </>
+            )}
+          </li>
+        </ul>
       </div>
     );
   }
