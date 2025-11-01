@@ -1,7 +1,7 @@
 import { FETCH_DATA_START, FETCH_DATA_SUCCESS, FETCH_DATA_FAIL } from './actions.js';
 
 const initialState = {
-  loading: false,
+  loading: true,
   data: null,
   error: null
 };
