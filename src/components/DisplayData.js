@@ -15,6 +15,7 @@ class DisplayData extends Component {
     return (
       <div>
         <h1>A short Naration of Lorem Ipsum</h1>
+        <h4>Below Contains a title and body</h4>
         {data && (
           <ul>
             <li>
