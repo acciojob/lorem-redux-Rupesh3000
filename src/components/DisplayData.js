@@ -20,14 +20,16 @@ class DisplayData extends Component {
           your time to Review
         </h4>
         <ul>
-          <li className="title">
-            {data && (
-              <>
+          {data && (
+            <>
+              <li className="title">
                 <p>Title:{data.title}</p>
+              </li>
+              <li className="body">
                 <p>Body: {data.body}</p>
-              </>
-            )}
-          </li>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     );
