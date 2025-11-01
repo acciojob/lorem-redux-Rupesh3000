@@ -10,7 +10,7 @@ class DisplayData extends Component {
   render() {
     const { loading, data } = this.props;
 
-    if (loading) return <h4 className="title">Loading...</h4>;
+    if (loading) return <h4>Loading...</h4>;
 
     return (
       <div>
@@ -20,10 +20,10 @@ class DisplayData extends Component {
           your time to Review
         </h4>
         <ul>
-          <li className="title">
+          <li>
             {data && (
               <>
-                <p>
+                <p className="title">
                   <b>Title:</b> {data.title}
                 </p>
                 <p>
