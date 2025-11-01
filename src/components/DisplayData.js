@@ -23,13 +23,11 @@ class DisplayData extends Component {
           <li>
             {data && (
               <>
-                <p>
-                  <b>Title :</b>
-                  {data.title}
+                <p className="title">
+                  <b>Title:</b> {data.title}
                 </p>
                 <p>
-                  <b>Body :</b>
-                  {data.body}
+                  <b>Body:</b> {data.body}
                 </p>
               </>
             )}
