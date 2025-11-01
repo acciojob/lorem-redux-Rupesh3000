@@ -19,16 +19,14 @@ class DisplayData extends Component {
           Below Contains A title and Body gotten froma random API, Please take
           your time to Review
         </h4>
-        <ul>
-          <li>
-            {data && (
-              <>
-                <p className="title">Title:{data.title}</p>
-                <p className="body">Body: {data.body}</p>
-              </>
-            )}
-          </li>
-        </ul>
+        {data && (
+          <ul>
+            <li className="title">
+              <p>Title:{data.title}</p>
+              <p>Body: {data.body}</p>
+            </li>
+          </ul>
+        )}
       </div>
     );
   }
