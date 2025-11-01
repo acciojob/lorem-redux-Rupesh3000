@@ -26,7 +26,7 @@ class DisplayData extends Component {
                 <p className="title">
                   <b>Title:</b> {data.title}
                 </p>
-                <p>
+                <p className="body">
                   <b>Body:</b> {data.body}
                 </p>
               </>
