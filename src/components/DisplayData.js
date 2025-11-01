@@ -22,10 +22,10 @@ class DisplayData extends Component {
         <ul>
           <li>
             {data && (
-              <p className="title">
-                <b>title :</b> {data.title}
-                <b>Body :</b> {data.body}
-              </p>
+              <>
+                <p className="title">Title: {data.title}</p>
+                <p>Body: {data.body}</p>
+              </>
             )}
           </li>
         </ul>
